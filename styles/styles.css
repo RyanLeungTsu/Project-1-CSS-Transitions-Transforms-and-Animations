@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* color: #ffffff; */
   }
   
   a.site-name {
@@ -12,7 +13,7 @@
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    color: #282828;
+    color: #ffffff;
   }
   .site-name img {
     display: block;
@@ -31,7 +32,7 @@
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   
   .site-navigation.toggled ul {
@@ -44,7 +45,7 @@
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #282828;
+    color: #ffffff;
   }
   
   .menu-toggle {
@@ -82,3 +83,9 @@
       padding: 0 1rem;
     }
   }
+
+
+/**/
+.homepage {
+    color:#ffffff;
+}

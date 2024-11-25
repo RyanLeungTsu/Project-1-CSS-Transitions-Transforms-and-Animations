@@ -9,8 +9,27 @@
     <!-- <link rel="icon" href="media/SU.svg"> -->
 
     <script src="scripts/scripts.js" defer></script>
+    <style>
+        body {
+          margin: 0;
+          height: 100vh;
+          background-image: url('media/mainpage.jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
-<body>
+<body class="homepagebody">
     <header class="site-header">
 
         <!-- <a href="index.html" class="site-name"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_the_Soviet_Union_%28Incorrect_Depiction%29.svg" alt="flag"></a> -->
@@ -39,6 +58,7 @@
 
     <main class="homepage">
         <h1>CSS Transitions <br>Transforms <br> Animations</h1>
+        <!-- <img src="media/mainpage.jpeg" alt="background"> -->
     </main>
     <footer>
         <p>&copy; Senlin LIn.</p>
