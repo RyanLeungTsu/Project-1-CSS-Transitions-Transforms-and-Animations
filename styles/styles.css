@@ -1,0 +1,84 @@
+/* Header
+--------------------------------------------- */
+.site-header {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  a.site-name {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #282828;
+  }
+  .site-name img {
+    display: block;
+    width: 8rem;
+    height: auto;
+  }
+  
+  .site-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 4.5rem; /* Matches the height of the .site-header */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+  }
+  
+  .site-navigation.toggled ul {
+    display: block;
+  }
+  
+  .site-navigation a {
+    display: block;
+    padding: 1rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #282828;
+  }
+  
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+  }
+  
+  .menu-toggle:focus {
+    border: 0;
+    outline: 1px dotted;
+  }
+  
+  @media (min-width: 50em) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .site-navigation {
+      flex: 1 1 auto;
+      padding: 0 1rem;
+    }
+  
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 0;
+    }
+  
+    .site-navigation a {
+      line-height: 4.5rem; /* Matches the height of the .site-header */
+      padding: 0 1rem;
+    }
+  }
