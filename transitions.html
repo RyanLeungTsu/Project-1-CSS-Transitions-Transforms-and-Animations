@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/transitions.js" defer></script>
+</head>
+<body>
+    <header>
+       
+    </header>
+    <main class="site-main">
+        <section class="transitions-banner">
+            <h1>CSS Transitions</h1>
+            <img src="banner-transitions-large_aqqec5_c_scale,w_1080.jpg"
+                 alt="Css codes"
+                 srcset="images/transitions-images/banner-transitions-large-180.jpg 180w,
+                    images/transitions-images/banner-transitions-large-647.jpg 647w,
+                    images/transitions-images/banner-transitions-large-969.jpg 969w,
+                    images/transitions-images/banner-transitions-large-1080.jpg 1080w"
+                sizes="(max-width: 1080px) 100vw, 1080px">
+        </section>
+        <section class="section-cards">
+            <div class="cards-wrapper">
+                <article class="card">
+                    <div>
+                        <h2>What is CSS Transtions and what does it do?</h2>
+                        <p>
+                            CSS transitions provide a way to control animation speed when changing CSS properties. <br> 
+                            Instead of making changes to a property happen instantly, you can set them to occur over a period of time. <br>
+                            CSS transitions enable developers to create smooth, engaging animations that enhance the user experience.
+                            This can apply to various properties, such as color, size, position, and opacity.
+                        </p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>
+                        <h2>Why would you use CSS Transtions?</h2>
+                        <p>
+                            Here are several key reasons why developers would choose to implement CSS transitions. <br>
+                            1. Improve user experience: Makes interactions more natural and friendly <br>
+                            2. Highlight important elements: Get the user's attention to key parts of the page <br>
+                            3. Create a professional visual: Makes the website looks more modern and beautiful <br>
+                            4. Easy implementation: Achieve simple animations with just CSS, without needing JavaScript
+                        </p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div>
+                        <h2>Where would you use it?</h2>
+                        <p>
+                            Buttons and Links : Smooth hover effects like color changes <br>
+                            Menus and Dropdowns : Smooth opening and closing animations <br>
+                            Image Galleries : Fading between images or adding hover effects <br>
+                            Progress Bars : Smoothly filling progress bars to indicate loading or completion <br>
+                            Cards and Grid : Hover effects on cards <br>
+                            Sliders : Adding transitions between slides <br>
+                            Forms : Animating input fields, buttons or showing error message <br>
+                            Pop-ups : Adding fade-in or fade-out effects when displaying or closing pop-up windows.
+                        </p>
+                    </div>
+                </article>
+                <article class="last-card">
+                    <h2>Examples of CSS Transitions</h2>
+                    <button class="button-bg">Hover Me</button>
+                    <p class="text-color">Hover to change text color and font size</p>
+                    <div class="box">
+                        <p>Hover Me. <br>
+                        This effect has a 1 second delay before starting</p>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <button class="progress-button" onmouseover="startProgress()">Start Progress</button>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
