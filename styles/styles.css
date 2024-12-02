@@ -5,23 +5,37 @@ body {
 	line-height: 1.5;
 	color: rgb(40, 40, 40);
 	max-width: 31.25rem;
-	margin: 0 auto;
 }
 
 /*--- Code walk-through -------------------*/
 
 .transform-box{
-    /* position: absolute;
-    top: 50%;
-    left: 38%; */
+    display: inline;
     background-color: blue;
     border-radius: .5rem;
+    margin-left: 10rem;
     color: white;
-    padding: 3rem;
-    transition: 2s;
+    padding: 2rem 3rem;
+    transition: 1s;
 
 }
 
 .transform-box:hover {
     transform: ;
+}
+
+@media (min-width: 50em) {
+
+body {
+    margin: 0 auto;
+    max-width: 31.25rem;
+	margin: 0 auto;
+}
+.transform-box{
+    padding: 5rem;
+    position: absolute;
+    top: 90%;
+    right: 20%;
+}
+
 }
