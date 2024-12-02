@@ -1,0 +1,260 @@
+/* Header
+--------------------------------------------- */
+.site-header {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  a.site-name {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #282828;
+  }
+  .site-name img {
+    display: block;
+    width: 8rem;
+    height: auto;
+  }
+  
+  .site-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 4.5rem; /* Matches the height of the .site-header */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+  }
+  
+  .site-navigation.toggled ul {
+    display: block;
+  }
+  
+  .site-navigation a {
+    display: block;
+    padding: 1rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #282828;
+  }
+  
+  .menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+  }
+  
+  .menu-toggle:focus {
+    border: 0;
+    outline: 1px dotted;
+  }
+  
+  @media (min-width: 50em) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .site-navigation {
+      flex: 1 1 auto;
+      padding: 0 1rem;
+    }
+  
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 0;
+    }
+  
+    .site-navigation a {
+      line-height: 4.5rem; /* Matches the height of the .site-header */
+      padding: 0 1rem;
+    }
+  }
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #282828;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0 0 .5em;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+	padding: 0 1rem;
+}
+
+/* Transitions style */
+.transitions-banner {
+    position: relative;
+}
+
+.transitions-banner h1 {
+    position: absolute;
+    bottom: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    width: fit-content;
+    padding: 1rem;
+    text-align:  2rem;
+    backdrop-filter: blur(4px);
+    clip-path: ellipse(52% 52% at 50% 50%);
+}
+
+.transitions-banner img {
+    display: block;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.section-cards {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card {
+    /* max-width: 50rem; */
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    background-color: #dbc2e7;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    transition: all 2.5s ease;
+}
+
+.card:hover {
+    width: 55rem;
+    background-color: #b84a86;
+    font-size: 1.5rem;
+}
+
+.last-card {
+    width: 100%;
+    height: 40rem;
+    margin: 2rem auto;
+    background-color: #e7ecd8;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+/* examples */
+.button-bg {
+    padding: 15px 40px;
+    margin: 1rem 0;
+    cursor: pointer;
+    background-color: #e5ff00;
+    transition: background-color 1.5s ease 0.5s;
+}
+
+.button-bg:hover {
+    background-color: #57b6d2;
+}
+
+.text-color {
+    margin: 1rem;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+.text-color:hover {
+    color: red;
+    font-size: 2rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 2.5rem auto;
+    border: 2px solid black;
+    background-color: #c39cc3;
+    transition: all 2s ease 1s;
+}
+
+.box:hover {
+    rotate: 180deg;
+}
+
+.progress-container {
+    width: 80%;
+    height: 20px;
+    background-color: #e0a70a;
+    border-radius: 10px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #f22318;
+    transition: width 4s ease;
+}
+
+.progress-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.progress-button:hover {
+    background-color: #57b6d2;
+}
+
+@media (min-width: 50em) {
+    .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
