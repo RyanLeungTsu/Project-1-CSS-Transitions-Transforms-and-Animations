@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Transitions, Transform and Animations</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css  ">
+    <link rel="stylesheet" href="styles/transform.css  ">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <!-- <a href="index.html" class="site-name"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_the_Soviet_Union_%28Incorrect_Depiction%29.svg" alt="flag"></a> -->
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg" alt="flag"> -->
+
+        <nav class="site-navigation" id="site-navigation">
+
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <title>Menu Icon</title>
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
+
+            <ul class="nav-menu" id="header-menu">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="transitions.html">Transition</a></li>
+                    <li><a href="transform.html">Transform</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                    <li><a href="credit.html">Credit</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <!-- What is it, what does it do, why use it, where would you use it -->
+        <h1 class="transform-h1">CSS Transform</h1>
+
+        <article class="transform-article">
+            <h2>What does Transform do in CSS?</h2>
+            <p>The transform property allows you to change an element. This property allows you to scale, rotate, move, and skew elements. Transform happens when an element changes states, such as on mouse-hover or mouse-click. </p>
+        </article>
+
+        <article class="transform-article1">
+            <h2>Benefits of using Transform property</h2>
+            <ul>
+                <li>The transform property shifts or adjusts elements without affecting the flow of the document.</li>
+                <li>Transformations can resize an element without affecting surrounding elements, unlike adjusting width or height.</li>
+                <li>You can create visually interesting effects, like tilting or skewing elements, that enhance the aesthetics of your design.</li>
+                <li>Add 3D effects or perspective to create immersive designs.</li>
+            </ul>
+        </article>
+
+        <article class="transform-article2">
+            <h2>Transform Values</h2>
+            <h3>Scale</h3>
+            <p>The scale value allows you to increase or decrease the size of an element.</p>
+            <h3>Rotate</h3>
+            <p>The element rotates clockwise or counterclockwise by a specified number of degrees. A positive value, such as 90deg, rotates the element clockwise, while a negative value, such as -90deg, rotates it counterclockwise.</p>
+            <h3>Translate</h3>
+            <p>The translate value moves an element left/right and up/down. The movement is based on the parameters given for the X (horizontal) Y (vertical) axes.</p>
+            <h3>Skew</h3>
+            <p>With the skew value, the element skews (or tilts) one direction or the other based on the values given for the X and Y axes.</p>
+        </article>
+
+        <article class="transform-article3">
+            <h2>Demo Box</h2>
+            <p class="transform-box"></p>
+        </article>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
