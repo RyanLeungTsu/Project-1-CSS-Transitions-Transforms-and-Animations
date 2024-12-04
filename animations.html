@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
+        <!-- Animation inspired from tutorials found on https://www.w3schools.com/css/css3_animations.asp-->
         <div class="page-name">
             <span style="--title: 0s">A</span>
             <span style="--title: 0.1s">N</span>
             <span style="--title: 0.2s">I</span>
             <span style="--title: 0.3s">M</span>
-            <span style="--title: 0.4s">A<br></span>
+            <span style="--title: 0.4s">A</span><br>
             <span style="--title: 0.5s">T</span>
             <span style="--title: 0.6s">I</span>
             <span style="--title: 0.7s">O</span>
             <span style="--title: 0.8s">N</span>
         </div> 
-    
 
-        <nav class = menu id="menu">
-
-            <button class='menu-toggle' aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                <img src="Icons/hamburg-menu-toggle-white.svg" alt="menu">
-            </button>
-
-            <ul class="menu-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="transitions.html">Transition</a></li>
-                <li><a href="transform.html">Transform</a></li>
-                <li><a href="animations.html">Animations</a></li>
-                <li><a href="credit.html">Credits</a></li>
-            </ul>
-        </nav>
+            <nav class = menu id="menu"> 
+                <button class='menu-toggle' aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                    
+                </button>
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="transitions.html">Transition</a></li>
+                    <li><a href="transform.html">Transform</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                    <li><a href="credit.html">Credits</a></li>
+                </ul>
+            </nav>
+        </button>
         
     </header>
     <main>
-        <h2></h2>
+        <article class="anim-txt-1">
+            <h2>What are animations?</h2>
+            <p>Animations in CSS are independent from Javascript and are used for creating animations using various properties. They allow for smooth transitions between pages, different elements and can be used to create a certain flow to enhance user experience on your site.</p>
+        </article>
+
+        <article class="anim-txt-2">
+            <h2>How to Use Animations</h2>
+            <table class="anim-table">
+                <tr class="table-head">
+                    <th>Code</th>
+                    <th>How and When to Use</th>
+                </tr>
+            </table>
+        </article>
     </main>
     <footer>
 
