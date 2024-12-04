@@ -154,7 +154,7 @@ a {
 .page-name span {
     display: inline-block;
     text-transform: uppercase;
-    animation: page-name 4s infinite;
+    animation: page-name 3s infinite;
     animation-delay: var(--title);
 }
 
@@ -165,7 +165,7 @@ a {
 
 
 @keyframes page-name {
-    0%, 50%, 100% {
+    0%, 20%, 70%, 120% {
       transform: translateY(0);
     }
     20% {
@@ -209,6 +209,37 @@ a {
     padding-right:  1rem;
     margin-right: 1rem;
     max-width: 30rem;
+}
+
+.alt-col-txt {
+    animation: alt-col 5s infinite;
+    display: inline-flex;
+    letter-spacing: -0.5rem;
+}
+
+.CSS-1 {
+    --color-1: #EFB6C8;
+    --color-2: #ff8800;
+    --color-3: #A888B5;
+}
+
+.CSS-2 {
+    --color-1: #A888B5;
+    --color-2: #EFB6C8;
+    --color-3: #ff8800;
+}
+
+.CSS-3 {
+    --color-1: #ff8800;
+    --color-2: #A888B5;
+    --color-3: #EFB6C8;
+}
+
+@keyframes alt-col {
+    0%, 32% {color: var(--color-1)}
+    33%, 65% {color: var(--color-2)}
+    66%, 99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
 }
 
 @media (min-width:50em) {
