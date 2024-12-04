@@ -25,14 +25,14 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
     text-align: left;
-    color: black;
-    background-color: beige;
+    color: #463E5B;
+    background-color: #FFD2A0;
     margin: 0 auto;
 }
 
 h2, h3, h4 {
     font-size: 4rem;
-    margin: 2rem;
+    /* margin: 2rem; */
 }
 
 li {
@@ -55,10 +55,6 @@ a {
     color: white;
     font-size: 2rem;
     margin: 3rem;
-}
-
-.menu-items a:hover {
-    /* border: 0.3rem solid white; */
 }
 
 .menu.toggled ul {
@@ -128,7 +124,9 @@ a {
     } */
 
     .menu-items{
-        display: inline-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: transparent;
         position: absolute;
         top: 0;
@@ -164,6 +162,8 @@ a {
     opacity: 0;
 }
 
+
+
 @keyframes page-name {
     0%, 50%, 100% {
       transform: translateY(0);
@@ -173,8 +173,16 @@ a {
     }
   }
 
+
+
 /* Media queries for head */
-@media (min-width: 60em) {
+@media (min-width: 30em) {
+    .page-name {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 65em) {
     .page-name {
         margin: 0;
         display: flex;
@@ -188,3 +196,27 @@ a {
 
 
 /* Main Styling */
+.anim-txt-1 {
+    border-left: #3D0E61 solid;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    max-width: 30rem;
+}
+
+.anim-txt-3 {
+    text-align: right;
+    border-right: #3D0E61 solid;
+    padding-right:  1rem;
+    margin-right: 1rem;
+    max-width: 30rem;
+}
+
+@media (min-width:50em) {
+    .anim-txt-1 {
+        margin-left:5rem ;
+    }
+
+    .anim-txt-3 {
+        margin-right:5rem ;
+    }
+}
