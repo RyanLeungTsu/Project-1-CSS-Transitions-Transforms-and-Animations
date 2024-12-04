@@ -1,3 +1,24 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+# Base
+	- Typography
+	- Elements
+	- Links
+#Header Styling
+    - Navbar 
+    - Footer
+#Main Styling
+    - body para and content
+
+--------------------------------------------------------------*/
+/* Base */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1.2rem;
 	font-weight: 400;
@@ -8,12 +29,24 @@ body {
     margin: 0 auto;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styling */
+
 .page-name {
-    position: relative;
-    top: 20rem;
-    
-    font-size: 2.5rem;
-    
+    display: inline-block;
+    text-align: center;
+    margin-top: 50vh;
+    height: 100vh;  
+    font-size: 4rem;
+    transition: opacity 0.5 ease;
 }
 
 .page-name span {
@@ -21,6 +54,10 @@ body {
     text-transform: uppercase;
     animation: page-name 4s infinite;
     animation-delay: var(--title);
+}
+
+.page-name.fade-out {
+    opacity: 0;
 }
 
 @keyframes page-name {
@@ -31,3 +68,86 @@ body {
       transform: translateY(-20px);
     }
   }
+
+  .menu {
+    text-align: center;
+    justify-content: center;  
+}
+
+.menu-toggle {
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border: 0;
+    padding: 1.5rem;
+    background-color: transparent;
+    width: 7rem;
+    height: 7rem;
+}
+
+.menu-items {
+    z-index: 100;
+    display: none;
+    background-color: rgba(146, 146, 146, 0.8);
+}
+
+.menu-items a {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.logo {
+    float: right;
+}
+
+.menu-items a:hover {
+    border: 0.3rem solid white;
+}
+
+.menu.toggled ul {
+    z-index: 100;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Media queries for head */
+@media (min-width: 60em) {
+    .page-name {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12rem;
+        letter-spacing: 2rem;
+    }
+}
+
+@media (min-width: 60em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-items, .menu.toggled .menu-items {
+        display: inline-flex;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-items a {
+        padding: 0.2rem 1rem;
+        margin: 0;
+        text-shadow: 0.1rem 0.2rem 0rem black;
+    }
+}
