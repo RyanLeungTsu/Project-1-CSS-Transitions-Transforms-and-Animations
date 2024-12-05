@@ -1,12 +1,3 @@
-body {
-	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.5;
-	color: rgb(40, 40, 40);
-	max-width: 31.25rem;
-}
-
 /*--- Code walk-through -------------------*/
 
 .transform-box{
