@@ -47,15 +47,17 @@
     <main>
         <article class="main-content anim-txt-1">
             <h2>What are 
-                <span class="alt-col-txt CSS-1">C</span>
-                <span class="alt-col-txt CSS-2">S</span>
-                <span class="alt-col-txt CSS-3">S</span>
+                <div class="CSS-txt">
+                    <span class="alt-col-txt CSS-1">C</span>
+                    <span class="alt-col-txt CSS-2">S</span>
+                    <span class="alt-col-txt CSS-3">S</span>
+                </div>
                 animations?</h2>
             <p>Animations in CSS are independent from Javascript and are used for creating animations using various properties. They allow for smooth transitions between pages, different elements and can be used to create a certain flow to enhance user experience on your site.</p>
         </article>
 
         <article class="main-content anim-txt-2">
-            <h2><div class="flip-txt">How to Use </div>Animations</h2>
+            <h2><div class="flip-txt">How to Use </div><div class="">Animations</div></h2>
             <table class="anim-table">
                 <div class="table-border">
                     <tr class="table-head">
@@ -89,6 +91,10 @@
                     <tr>
                         <td>animation-fill-mode</td>
                         <td>Indicates whether the animation retains styles after its execution <br> Values include: none, forwards, backwards, both</td>
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>
+                        <td>Controls various points of an animation like a flipnote animation, with the start at 0% and ending with 100%</td>
                     </tr>
                 </div>
             </table>

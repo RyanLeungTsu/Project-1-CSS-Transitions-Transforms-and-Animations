@@ -227,34 +227,17 @@ a {
 
 
 /* Main 2 */
-
-
 .anim-txt-2 h2 {
     text-align: center;
     position: relative;
 }
 
 .flip-txt {
-    animation: 3s anim-vertical-txt-flip ease infinite;
-  }
-  @keyframes anim-vertical-txt-flip {
-    0% {
-      opacity: 0;
-      transform: rotateX(90deg);
-    }
-    50% {
-      opacity: 1;
-      transform: rotateX(720deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotateX(720deg);
-    }
+    animation: 4s anim-vertical-txt-flip ease infinite;
+    
   }
   
-
-
-
+  
 .anim-table {
     margin: 0 auto;
     border-collapse: collapse;
@@ -296,6 +279,28 @@ a {
     33%, 65% {color: var(--color-2)}
     66%, 99%   {color: var(--color-3)}
     100%  {color: var(--color-1)}
+}
+
+@keyframes anim-vertical-txt-flip {
+    0% {
+        opacity: 1;
+        transform: rotateX(90deg);
+    }
+
+    40% {
+        opacity: 1;
+        transform: rotateX(900deg);
+    }
+
+    80% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
 }
 
 /* Media queries for main */
