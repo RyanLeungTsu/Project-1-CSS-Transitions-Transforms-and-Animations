@@ -1,4 +1,10 @@
+.transform-main {
+    margin: 1rem;
+}
 
+.transform-footer {
+    margin-top: 2rem;
+}
 
 /*--- Code walk-through -------------------*/
 
@@ -25,9 +31,7 @@ body {
 }
 .transform-box{
     padding: 5rem;
-    position: absolute;
-    top: 90%;
-    right: 20%;
+    margin-top: 2rem;
 }
 
 }
