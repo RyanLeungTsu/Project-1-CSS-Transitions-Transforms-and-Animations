@@ -53,6 +53,12 @@ a {
     color: white;
 }
 /* Nav bar/hamburg menu styling */
+.menu-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .menu-items {
     z-index: 100;
     display: none;
@@ -234,7 +240,6 @@ a {
 
 .flip-txt {
     animation: 4s anim-vertical-txt-flip ease infinite;
-    
   }
   
   
@@ -269,8 +274,14 @@ a {
 
 .anim-grid {
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, 3fr);
+    grid
+}
+
+.grid-anim-1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
 }
 
 /* Keyframes for main */

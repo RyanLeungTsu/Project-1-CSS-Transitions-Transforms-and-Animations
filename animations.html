@@ -18,7 +18,7 @@
 <body>
     <header>
         <!-- Animation inspired from tutorials found on https://www.w3schools.com/css/css3_animations.asp-->
-        <div class="page-name">
+        <article class="page-name">
             <!-- using style tag to show it can be used, although it should not be (CSS equivalent in comments in animations.css) -->
             <span style="--title: 0s">A</span>
             <span style="--title: 0.1s">N</span>
@@ -29,7 +29,7 @@
             <span style="--title: 0.6s">I</span>
             <span style="--title: 0.7s">O</span>
             <span style="--title: 0.8s">N</span>
-        </div> 
+        </article> 
             <nav class = menu id="menu"> 
                 <button class='menu-toggle' aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle"></button>
                 
@@ -45,18 +45,18 @@
         
     </header>
     <main>
-        <article class="main-content anim-txt-1">
+        <section class="main-content anim-txt-1">
             <h2>What are 
-                <div class="CSS-txt">
+                <article class="CSS-txt">
                     <span class="alt-col-txt CSS-1">C</span>
                     <span class="alt-col-txt CSS-2">S</span>
                     <span class="alt-col-txt CSS-3">S</span>
-                </div>
+                </article>
                 animations?</h2>
             <p>Animations in CSS are independent from Javascript and are used for creating animations using various properties. They allow for smooth transitions between pages, different elements and can be used to create a certain flow to enhance user experience on your site.</p>
-        </article>
+            </section>
 
-        <article class="main-content anim-txt-2">
+        <section class="main-content anim-txt-2">
             <h2><div class="flip-txt">How to Use </div><div class="">Animations</div></h2>
             <table class="anim-table">
                 <div class="table-border">
@@ -98,14 +98,20 @@
                     </tr>
                 </div>
             </table>
-        </article>
+        </section>
 
-        <article class="main-content anim-txt-3">
+        <section class="main-content anim-txt-3">
             <h2 data-text="Explore">Explore Animations</h2>
-                <div class="anim-grid">
-
-                </div>
-        </article>
+                <article class="anim-grid">
+                    <div class="grid-anim-1"><img src="" alt=""> </div>
+                    <!-- https://www.pexels.com/photo/variety-of-maki-3642030/ -->
+                    <div class="grid-anim-2"> </div>
+                    <div class="grid-anim-3"> </div>
+                    <div class="grid-anim-4"> </div>
+                    <div class="grid-anim-5"> </div>
+                    <div class="grid-anim-6"> </div>
+                </article>
+        </section>
 
     </main>
     <footer>
