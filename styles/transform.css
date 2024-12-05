@@ -1,10 +1,19 @@
+.transform-main {
+    margin: 1rem;
+}
+
+.transform-footer {
+    margin-top: 2rem;
+}
+
 /*--- Code walk-through -------------------*/
 
 .transform-box{
-    display: inline;
+    display:;
+    margin: 1rem 10rem;
     background-color: blue;
     border-radius: .5rem;
-    padding: 1rem 2rem;
+    padding: 4rem 2rem;
     transition: 0s;
 
 }
@@ -22,9 +31,7 @@ body {
 }
 .transform-box{
     padding: 5rem;
-    position: absolute;
-    top: 90%;
-    right: 20%;
+    margin-top: 2rem;
 }
 
 }
