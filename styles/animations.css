@@ -202,6 +202,50 @@ a {
     line-height: 1.1;
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.slideshow picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slideshow 15s infinite;
+}
+
+
+.slideshow img {
+    object-fit:cover;
+    width: 40rem;
+    height: 25rem;
+}
+
+@keyframes slideshow {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+.slideshow picture:nth-child(1) {
+    animation-delay: 0s; 
+}
+
+.slideshow picture:nth-child(2) {
+    animation-delay: -10s; 
+}
+
+.slideshow picture:nth-child(3) {
+    animation-delay: -5s; 
+}
+
 .anim-txt-1 {
     border-top: #3D0E61 solid;
     max-width: 15rem;
@@ -230,6 +274,8 @@ a {
     --color-2: #A888B5;
     --color-3: #efb6c8;
 }
+
+
 
 
 
@@ -287,26 +333,6 @@ a {
    object-fit: contain;
 }
 
-.sushi-txt {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sushi-txt h3 {
-    margin: 0;
-    font-size: 150px;
-    color: rgba(225,225,225, .01);
-    background-image: url(images/animation-images/sushi-mobile.jpg);
-    background-repeat: repeat;
-    -webkit-background-clip:text;
-    animation: animate 15s ease-in-out infinite;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-}
 
 @keyframes animate {
     0%, 100% {
@@ -354,6 +380,18 @@ a {
 }
 
 /* Media queries for main */
+@media (min-width:40em) {
+    /* .anim-txt-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .slideshow, .CSS-txt {
+        max-width: 50%; /* Equal space for both sections */
+    } */
+}
+
 @media (min-width:30em) {
     .anim-table {
         font-size: 2rem;
@@ -373,12 +411,16 @@ a {
     .anim-txt-1 {
         padding-left: 2rem;
         margin-left: 1rem;
-        max-width: 20rem;
+        max-width: 40rem;
         font-size: 2rem;
     }
 
+    .anim-txt-1 h2 {
+        text-align: left;
+    }
+
     h2 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 }
 
@@ -386,10 +428,14 @@ a {
 footer {
     color: #FFD2A0;
     background-color: #463E5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 0rem;
-    position: relative;          /* Position it at the bottom */
-    bottom: 0;                   /* Stick it to the bottom */
-    left: 0;                     /* Extend it to the left */
     width: 100%; 
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 3rem;
 }
