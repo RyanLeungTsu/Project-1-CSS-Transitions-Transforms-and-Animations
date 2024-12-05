@@ -232,6 +232,7 @@ a {
 }
 
 
+
 /* Main 2 */
 .anim-txt-2 h2 {
     text-align: center;
@@ -270,18 +271,56 @@ a {
 /* Main 3 */
 .anim-txt-3 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .anim-grid {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(6, 3fr);
-    grid
+    width: 100%;
+    max-height: 20rem;
+    overflow: hidden;
 }
 
-.grid-anim-1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
+.grid-anim.img-1 {
+   object-fit: contain;
+}
+
+.sushi-txt {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sushi-txt h3 {
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225,225,225, .01);
+    background-image: url(images/animation-images/sushi-mobile.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
 }
 
 /* Keyframes for main */
