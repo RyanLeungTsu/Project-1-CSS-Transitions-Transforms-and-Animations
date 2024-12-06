@@ -470,11 +470,26 @@ a {
     animation: clip-txt 4s linear infinite;
 }
 
+@keyframes clip-txt {
+    to {
+      background-position: 200% center;
+    }
+}
+
 .grid-anim-3 {
-  background: #33CCCC;
-  text-align: center;
-  padding: 2em;
-  animation: rotating-color 9s linear infinite;
+    background: #33CCCC;
+    text-align: center;
+    padding: 2em;
+    animation: rotating-color 9s linear infinite;
+}
+
+@keyframes rotating-color {
+	0%   { background: #70cc80; }
+	20%  { background: #f2a532; }
+	40%  { background: #bda7ff; }
+	60%  { background: #FCCA00; }
+	80%  { background: #54acff; }
+	100% { background: #ff3a3a; }
 }
 
 .gold-box {
@@ -482,8 +497,10 @@ a {
     height: 5rem;
     background: #ff8800;
     position: relative;
+    animation-timing-function: cubic-bezier(0.5,0.1,0.5,1);
     animation: path 8s infinite;
-  }
+}
+
 
 .grid-anim-4 span {
     text-shadow: 0px 0px 0px rgb(0, 0, 0);
@@ -587,11 +604,7 @@ a {
     }
 }
 
-@keyframes clip-txt {
-    to {
-      background-position: 200% center;
-    }
-  }
+
 
 @keyframes path {
     0%  {
@@ -611,14 +624,7 @@ a {
     }
 }
 
-@keyframes rotating-color {
-	0%   { background: #70cc80; }
-	20%  { background: #f2a532; }
-	40%  { background: #bda7ff; }
-	60%  { background: #FCCA00; }
-	80%  { background: #54acff; }
-	100% { background: #ff3a3a; }
-}
+
 
 @keyframes fade-left{
     50% {transform: skew(50deg) translateY(-200%);
@@ -721,7 +727,7 @@ a {
     }
 
     @keyframes path {
-        0%  { top: 0; left: 0; }      
+        0%    { top: 0; left: 0; }      
         25%   { top: 0; left: 5rem; } 
         50%   { top: 5rem; left: 5rem; } 
         75%   { top: 5rem; left: 0; }  

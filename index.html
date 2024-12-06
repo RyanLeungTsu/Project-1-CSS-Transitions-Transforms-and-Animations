@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>css</title>
+    <title>CSS: Transforms, Transitions and Animations</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -21,7 +21,6 @@
 
             <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                    <title>Menu Icon</title>
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
                 </svg>
             </button>
@@ -36,10 +35,14 @@
 
         </nav>
 
+        <picture>
+            <source class="img-header" src="images/home-images/header-large.jpg" media="(min-width:  60em)">
+            <img class="img-header" src="images/home-images/header-small.jpg" srcset="images/home-images/header-medium.jpg" alt="header image containing a generic coding picture" sizes="(max-width: 960px) 100vw, 1080px">
+        </picture>
     </header>
 
-    <main class="homepage">
-        <h1>CSS Transitions <br>Transforms <br> Animations</h1>
+    <main>
+        <h1 class="homepage">CSS Transitions <br>Transforms <br> Animations</h1>
     </main>
     <footer>
         <p>&copy; Senlin LIn.</p>
