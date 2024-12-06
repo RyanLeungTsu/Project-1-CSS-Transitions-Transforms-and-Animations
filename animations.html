@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&family=Varela+Round&display=swap" rel="stylesheet">
     
@@ -16,8 +16,24 @@
     <!-- <script defer src="scripts/animations.js"></script> -->
 
     <title>Animations</title>
+    <div class="animation-background" >
+        <ul class="anim-container">
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+        </ul>
+    </div >
 </head>
-
 <body>
     <header>
         <!-- Animation inspired from tutorials found on https://www.w3schools.com/css/css3_animations.asp-->
@@ -66,18 +82,18 @@
             </article>
                     
             <article class="slideshow">  
-                        <img id="paris"  src="images/animation-images/paris-mobile.jpg" 
-                        srcset="images/animation-images/paris-desktop.jpg"
+                        <img id="paris"  src="images/animation-images/paris-small.jpg" 
+                        srcset="images/animation-images/paris-medium.jpg"
                         alt="eiffel tower in paris image"
                         sizes="(max-width: 1080px) 100vw, 1080px">
                         
-                        <img id="tokyo"  src="images/animation-images/tokyo-mobile.jpg"
-                        srcset="images/animation-images/tokyo-desktop.jpg"
+                        <img id="tokyo"  src="images/animation-images/tokyo-small.jpg"
+                        srcset="images/animation-images/tokyo-medium.jpg"
                          alt="tokyo night scenery image"
                          sizes="(max-width: 1080px) 100vw, 1080px">
            
-                        <img id="NYC"  src="images/animation-images/NYC-mobile.jpg" 
-                        srcset="images/animation-images/NYC-desktop.jpg"
+                        <img id="NYC"  src="images/animation-images/NYC-small.jpg" 
+                        srcset="images/animation-images/NYC-medium.jpg"
                         alt="view of NYC"
                         sizes="(max-width: 1080px) 100vw, 1080px">
                   
@@ -90,7 +106,7 @@
         <section class="main-content anim-txt-2">
             <h2><div class="flip-txt">How to Use </div><div class="">Animations</div></h2>
             <table class="anim-table">
-                <div class="table-border">
+                <div>
                     <tr class="table-head">
                         <th>Code</th>
                         <th>Description</th>
@@ -155,12 +171,9 @@
                     </div>
                 </article>
         </section>
-
     </main>
     <footer>
         <p>@Ryan Leung</p>
     </footer>
 </body>
-
-
 </html>

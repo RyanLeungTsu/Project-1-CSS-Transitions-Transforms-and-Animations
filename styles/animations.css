@@ -3,7 +3,7 @@
 ----------------------------------------------------------------
 # Generic (CALLED IN ANOTHER FILE)
 	- Normalize
-# Base
+# Base (Applies to entire page)
 	- Typography
 	- Elements
 	- Links
@@ -28,11 +28,11 @@ body {
     color: #463E5B;
     background-color: #FFD2A0;
     margin: 0 auto;
-    max-width: 70%;
 }
 
 main {
     margin: 0 auto;
+    max-width: 70%;
 }
 
 h2, h3, h4 {
@@ -47,8 +47,138 @@ a {
     text-decoration: none;
     color: white;
 }
-/* Nav bar/hamburg menu styling */
 
+.animation-background{
+    z-index: -999;
+    background: transparent;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+}
+
+.anim-container li{
+    position: absolute;
+    bottom: -15rem;
+    width: 20px;
+    height: 20px;
+    background: #7c6ea2;
+    animation: upwards 20s linear infinite;
+}
+
+.anim-container li:nth-child(1) {
+    left: 25%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 0s;
+}
+
+.anim-container li:nth-child(2) {
+    left: 10%;
+    width: 1rem;
+    height: 1rem;
+    animation-delay: 2s;
+}
+
+.anim-container li:nth-child(3) {
+    left: 70%;
+    width: 0.5rem;
+    height: 0.5rem;
+    animation-delay: 13s;
+}
+
+.anim-container li:nth-child(4) {
+    left: 40%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 5s;
+}
+
+.anim-container li:nth-child(5) {
+    left: 65%;
+    width: 9rem;
+    height: 9rem;
+    animation-delay: 10s;
+}
+
+.anim-container li:nth-child(6) {
+    left: 75%;
+    width: 7rem;
+    height: 7rem;
+    animation-delay: 8s;
+}
+
+.anim-container li:nth-child(7) {
+    left: 35%;
+    width: 3rem;
+    height: 3rem;
+    animation-delay: 9s;
+}
+
+.anim-container li:nth-child(8) {
+    left: 50%;
+    width: 1.5;
+    height: 1.5;
+    animation-delay: 17s;
+}
+
+.anim-container li:nth-child(9) {
+    left: 20%;
+    width: 1rem;
+    height: 1rem;
+    animation-delay: 2s;
+}
+
+.anim-container li:nth-child(10) {
+    left: 85%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 0s;
+}
+
+.anim-container li:nth-child(11) {
+    left: 15%;
+    width: 7rem;
+    height: 7rem;
+    animation-delay: 7s;
+}
+
+.anim-container li:nth-child(12) {
+    left: 25%;
+    width: 4rem;
+    height: 4rem;
+    animation-delay: 0s;
+}
+
+.anim-container li:nth-child(13) {
+    left: 55%;
+    width: 6.5rem;
+    height: 6.5rem;
+    animation-delay: 3s;
+}
+
+/* eyframes for base styles */
+@keyframes upwards {
+    0% {
+        border-radius: 40%;
+        transform: translateY(90) rotate(90deg);
+        opacity: 1;
+    }
+
+    50% {
+        border-radius: 20%;
+    }
+
+    100% {
+        border-radius: 0;
+        /* Makes the cubes fly up */
+        transform: translateY(-100vh) rotate(900deg);
+        opacity: 0;
+    }
+}
+
+/* Nav bar/hamburg menu styling */
 .menu-toggle {
     position: fixed;
     top: 0;
@@ -67,19 +197,6 @@ a {
     font-size: 2rem;
     margin: 3rem;
    
-}
-
-.menu.toggled ul {
-    z-index: 100;
-    display: block;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    justify-content: center;
-    
 }
 
 @media (min-width: 60em) {
@@ -172,7 +289,7 @@ a {
     }
   }
 
-/* Media queries for head */
+/* Media queries for header */
 @media (min-width: 30em) {
     .page-name {
         margin-left: 0;
@@ -202,8 +319,6 @@ a {
 }
 
 /* Main 1 */
-
-
 .slideshow {
     position: relative;
     width: 100%;
@@ -228,8 +343,7 @@ a {
     height: 50vh;
 }
 
-/* Slideshow inspiured by https://codingartistweb.com/2024/11/auto-images-slideshow-html-css/ */
-
+/* Slideshow inspired by https://codingartistweb.com/2024/11/auto-images-slideshow-html-css/ */
 .slideshow img:nth-child(1) {
     animation-delay: 0s; 
 }
@@ -276,6 +390,10 @@ a {
     position: relative;
 }
 
+.anim-txt-2 table {
+    border: #463E5B 0.1rem solid;
+}
+
 .flip-txt {
     animation: 4s anim-vertical-txt-flip ease infinite;
   }
@@ -298,7 +416,6 @@ a {
 
 .anim-table td {
     background-color: rgb(239, 182, 200, 0.6);
-
 }
 
 .anim-table tr:nth-child(even) {
@@ -343,15 +460,18 @@ a {
     font-size: 2rem;
     padding: 1rem;
     text-transform: uppercase;
-    border: #efb6c8 solid;
-    overflow:visible;
+    border: #463E5B 0.1rem solid;
+    overflow: visible;
+    background-color: rgb(239, 182, 200, 0.6);
 }
 
 /* Webkit is only supported by chrome and safari */
 .gradient-txt {
     background-image: linear-gradient(-170deg,#4d4079 0%,#436f8e 33%,#ff1361 66%,#ffb300 100%);
     background-size: 210%;
+    /* clips the gradient box so that the text is overlaid on top, and everything not within the text is cropped out */
     -webkit-background-clip: text;
+    /* Makes the text color transparent so you can see the gradient box behind it */
     -webkit-text-fill-color: transparent;
     animation: clip-txt 4s linear infinite;
 }
@@ -427,11 +547,21 @@ a {
 
 /* Keyframes for main */
 @keyframes slideshow {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+    0%  {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    53% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @keyframes alt-col {
@@ -470,11 +600,21 @@ a {
   }
 
 @keyframes path {
-    0%  {left: 0; }      
-  25%   {left: 5rem; } 
-  50%   {left: 5rem; } 
-  75%   {left: 0; }  
-  100%  {left: 0; } 
+    0%  {
+        left: 0; 
+    }      
+  25%   {
+    left: 5rem; 
+    } 
+  50%   {
+    left: 5rem;
+    } 
+  75%   {
+    left: 0;
+    }  
+  100%  {
+    left: 0;  
+    }
 }
 
 @keyframes rotating-color {
@@ -595,14 +735,28 @@ a {
     }
 }
 
-
-
 /* Footer Stylings */
-footer {
+/* footer {
     color: #FFD2A0;
     background-color: #463E5B;
     text-align: center;
     display: block;
     width: 100vw; 
     height: 3rem;
+    box-sizing: border-box;
+} */
+
+footer {
+    position: relative;  /* Position it relative to its parent */
+    width: 100vw;        /* Set width to full viewport width */
+    height: 3rem;
+    color: #FFD2A0;
+    background-color: #463E5B;
+    text-align: center;
+    display: block;
+    left: 0;             /* Align it to the left */
+    right: 0;            /* Align it to the right */
+    max-width: 100%;     /* Make sure no max-width is restricting it */
+    margin: 0;           /* Remove any default margin */
+    box-sizing: border-box;  /* Prevent overflow issues */
 }
