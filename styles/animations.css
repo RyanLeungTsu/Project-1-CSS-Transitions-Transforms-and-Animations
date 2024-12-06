@@ -48,6 +48,7 @@ a {
     color: white;
 }
 
+/* animation-background inspired by https://codepen.io/alvarotrigo/pen/GRvYNax */
 .animation-background{
     z-index: -999;
     background: transparent;  
