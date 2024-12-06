@@ -1,3 +1,43 @@
+/* Base */
+body {
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #463E5B ;
+	background-color: #FFD2A0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Barlow Condensed", Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0 0 .5em;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
 /* Header
 --------------------------------------------- */
 .site-header {
@@ -46,7 +86,7 @@
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #282828;
+    color: #FFD2A0;;
   }
   
   .menu-toggle {
@@ -55,12 +95,22 @@
     border: 0;
     padding: 1rem;
     z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   
   .menu-toggle:focus {
     border: 0;
     outline: 1px dotted;
   }
+
+.menu-items a {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    margin: 3rem;
+}
   
   @media (min-width: 50em) {
     .menu-toggle {
@@ -85,44 +135,7 @@
       padding: 0 1rem;
     }
   }
-  
-body {
-	font-family: "Barlow Condensed", sans-serif;
-	font-size: 1.25rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #463E5B ;
-	background-color: #FFD2A0;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Barlow Condensed", Georgia, Times, "Times New Roman", serif;
-	margin: .5em 0;
-	font-size: 1.75rem;
-	text-align: center;
-}
-
-h1 {
-	font-size: 3rem;
-	margin: 0 0 .5em;
-}
-
-h2 {
-	font-size: 1.75rem;
-}
-
-p {
-	margin: 0 0 1.5em;
-}
-
-html {
-	scroll-behavior: smooth;
-}
 
 
 /* Elements
