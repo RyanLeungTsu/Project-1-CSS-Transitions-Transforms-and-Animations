@@ -185,18 +185,11 @@ a {
     left: 0;
 }
 
-.menu-items {
-    z-index: 100;
-    display: none;
-    background-color: rgba(146, 146, 146, 0.8);
-}
-
 .menu-items a {
     display: block;
     color: white;
     font-size: 2rem;
     margin: 3rem;
-   
 }
 
 @media (min-width: 60em) {
