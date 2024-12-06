@@ -26,8 +26,8 @@
     margin: 0;
     text-align: center;
     display: none;
-    position: absolute;
-    top: 4.5rem; /* Matches the height of the .site-header */
+    position: fixed;
+    top: 0; /* Matches the height of the .site-header */
     left: 0;
     right: 0;
     z-index: 2;
@@ -36,6 +36,8 @@
   
   .site-navigation.toggled ul {
     display: block;
+    height: 100vh;
+    background-color: #463E5B;
   }
   
   .site-navigation a {
