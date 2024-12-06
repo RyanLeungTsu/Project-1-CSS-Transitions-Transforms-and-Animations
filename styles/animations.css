@@ -357,7 +357,7 @@ a {
 }
 
 .grid-anim-3 {
-  background: #33CCCC; /* Fallback */
+  background: #33CCCC;
   text-align: center;
   padding: 2em;
   animation: rotating-color 9s linear infinite;
