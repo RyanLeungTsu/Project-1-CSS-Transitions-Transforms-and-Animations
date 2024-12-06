@@ -52,6 +52,7 @@
     background-color: transparent;
     border: 0;
     padding: 1rem;
+    z-index: 100;
   }
   
   .menu-toggle:focus {

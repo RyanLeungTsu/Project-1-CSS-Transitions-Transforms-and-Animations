@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&family=Varela+Round&display=swap" rel="stylesheet">
     
 
-    <script defer src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js" defer></script>
     <!-- <script defer src="scripts/animations.js"></script> -->
 
     <title>Animations</title>
@@ -33,7 +33,7 @@
             <span style="--title: 0.7s">O</span>
             <span style="--title: 0.8s">N</span>
         </article> 
-            <nav class = menu id="menu"> 
+            <nav class="site-navigation" id="site-navigation"> 
                 <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
                         <title>Menu Icon</title>
@@ -49,7 +49,7 @@
                     <li><a href="credit.html">Credits</a></li>
                 </ul>
             </nav>
-        </button>
+        </article>
         
     </header>
     <main>
@@ -65,24 +65,25 @@
                     <p>Animations in CSS are independent from Javascript and are used for creating animations using various properties. They allow for smooth transitions between pages, different elements and can be used to create a certain flow to enhance user experience on your site.</p>
             </article>
                     
-            <article>
-                <div class="slideshow">
-                    <picture>
-                        <source id="paris" media="(min-width:30rem)" srcset="images/animation-images/paris-desktop.jpg">  
-                        <img id="paris"  src="images/animation-images/paris-mobile.jpg" alt="paris image">
-                    </picture>
-                    <picture>
-                        <source id="tokyo"  media="(min-width:30rem)" srcset="images/animation-images/tokyo-desktop.jpg">  
-                        <img id="tokyo"  src="images/animation-images/tokyo-mobile.jpg" alt="paris image">
-                    </picture>
-                    <picture>
-                        <source id="NYC"  media="(min-width:30rem)" srcset="images/animation-images/NYC-desktop.jpg">  
-                        <img id="NYC"  src="images/animation-images/NYC-mobile.jpg" alt="paris image">
-                    </picture>
+            <article class="slideshow">  
+                        <img id="paris"  src="images/animation-images/paris-mobile.jpg" 
+                        srcset="images/animation-images/paris-desktop.jpg"
+                        alt="eiffel tower in paris image"
+                        sizes="(max-width: 1080px) 100vw, 1080px">
+                        
+                        <img id="tokyo"  src="images/animation-images/tokyo-mobile.jpg"
+                        srcset="images/animation-images/tokyo-desktop.jpg"
+                         alt="tokyo night scenery image"
+                         sizes="(max-width: 1080px) 100vw, 1080px">
+           
+                        <img id="NYC"  src="images/animation-images/NYC-mobile.jpg" 
+                        srcset="images/animation-images/NYC-desktop.jpg"
+                        alt="view of NYC"
+                        sizes="(max-width: 1080px) 100vw, 1080px">
+                  
                     <!-- https://www.pexels.com/photo/eiffel-tower-behind-buildings-1850619/ -->
                     <!-- https://www.pexels.com/photo/people-walking-on-the-street-2506923/ -->
                     <!-- https://www.pexels.com/photo/empire-state-building-new-york-466685/ -->
-                </div>
             </article>
         </section>
 
