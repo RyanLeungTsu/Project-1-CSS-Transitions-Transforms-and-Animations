@@ -17,7 +17,7 @@
     border: solid;
     border-radius: .5rem;
     padding: 4rem 2rem;
-    transition: 1.5s;
+    transition: 1s;
     /* transform-origin: top left; */
 
 }
@@ -39,7 +39,8 @@
 }
 
 .skew:hover {
-    transform: skew(20deg)
+    transform: skew(20deg);
+    /* transform: scale(1.5) rotate(360deg) translate(10rem) skew(30deg); */
 }
 
 @media (min-width: 50em) {
