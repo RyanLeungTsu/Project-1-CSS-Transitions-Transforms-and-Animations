@@ -14,7 +14,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Barlow Condensed", Georgia, Times, "Times New Roman", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
 	text-align: center;
@@ -45,51 +44,51 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
-  a.site-name {
+a.site-name {
     font-family: "Barlow Condensed", Georgia, Times, "Times New Roman", serif;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     color: #282828;
-  }
-  .site-name img {
+}
+.site-name img {
     display: block;
     width: 8rem;
     height: auto;
-  }
+}
   
-  .site-navigation ul {
+.site-navigation ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
     display: none;
     position: fixed;
-    top: 0; /* Matches the height of the .site-header */
+    top: 0; 
     left: 0;
     right: 0;
     z-index: 2;
     background-color: #FFD2A0;
-  }
+}
   
-  .site-navigation.toggled ul {
+.site-navigation.toggled ul {
     display: block;
     height: 100vh;
     background-color: #463E5B;
-  }
+}
   
-  .site-navigation a {
+.site-navigation a {
     display: block;
     padding: 1rem;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     color: #ffffff;;
-  }
+}
   
-  .menu-toggle {
+.menu-toggle {
     display: block;
     background-color: transparent;
     border: 0;
@@ -98,12 +97,12 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-  }
+}
   
-  .menu-toggle:focus {
+.menu-toggle:focus {
     border: 0;
     outline: 1px dotted;
-  }
+}
 
 .menu-items a {
     display: block;
@@ -127,7 +126,6 @@ html {
   width: fit-content;
   padding: 1rem;
   text-align: center;
-  z-index: 10;
 }
 
 .home-banner img {
