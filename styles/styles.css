@@ -136,6 +136,16 @@ html {
   height: 60rem;
   object-fit: cover;
 }
+
+.table-container table {
+	border: 1px solid #000000;
+	margin: 4rem auto;
+	text-align: center;
+}
+
+.table-container td {
+	padding: 0.5rem;
+}
   
   @media (min-width: 50em) {
     .menu-toggle {
