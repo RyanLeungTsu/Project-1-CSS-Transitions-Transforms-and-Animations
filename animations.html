@@ -3,18 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <!-- Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&family=Varela+Round&display=swap" rel="stylesheet">
+    
 
+    <script src="scripts/scripts.js" defer></script>
+    <!-- <script defer src="scripts/animations.js"></script> -->
+
+    <title>Animations</title>
+    <div class="animation-background" >
+        <ul class="anim-container">
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+                <li class="squares"></li>
+        </ul>
+    </div >
+</head>
 <body>
     <header>
-
+        <!-- Animation inspired from tutorials found on https://www.w3schools.com/css/css3_animations.asp-->
+        <article class="page-name">
+            <!-- using style tag to show it can be used, although it should not be (CSS equivalent in comments in animations.css) -->
+            <span style="--title: 0s">A</span>
+            <span style="--title: 0.1s">N</span>
+            <span style="--title: 0.2s">I</span>
+            <span style="--title: 0.3s">M</span>
+            <span style="--title: 0.4s">A</span><br>
+            <span style="--title: 0.5s">T</span>
+            <span style="--title: 0.6s">I</span>
+            <span style="--title: 0.7s">O</span>
+            <span style="--title: 0.8s">N</span>
+        </article> 
+            <nav class="site-navigation" id="site-navigation"> 
+                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                        <title>Menu Icon</title>
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                    </svg>
+                </button>
+                
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="transitions.html">Transition</a></li>
+                    <li><a href="transform.html">Transform</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                    <li><a href="credit.html">Credits</a></li>
+                </ul>
+            </nav>
+        </article>
+        
     </header>
     <main>
-        
+        <section class="main-content anim-txt-1">
+            <article class="CSS-header">
+                <h2>What are 
+                    <article class="CSS-txt">
+                        <span class="alt-col-txt CSS-1">C</span>
+                        <span class="alt-col-txt CSS-2">S</span>
+                        <span class="alt-col-txt CSS-3">S</span>
+                    </article>
+                    animations?</h2>
+                    <p>Animations in CSS are independent from Javascript and are used for creating animations using various properties. They allow for smooth transitions between pages, different elements and can be used to create a certain flow to enhance user experience on your site.</p>
+            </article>
+                    
+            <article class="slideshow">  
+                        <img id="paris"  src="images/animation-images/paris-small.jpg" 
+                        srcset="images/animation-images/paris-medium.jpg"
+                        alt="eiffel tower in paris image"
+                        sizes="(max-width: 1080px) 100vw, 1080px">
+                        
+                        <img id="tokyo"  src="images/animation-images/tokyo-small.jpg"
+                        srcset="images/animation-images/tokyo-medium.jpg"
+                         alt="tokyo night scenery image"
+                         sizes="(max-width: 1080px) 100vw, 1080px">
+           
+                        <img id="NYC"  src="images/animation-images/NYC-small.jpg" 
+                        srcset="images/animation-images/NYC-medium.jpg"
+                        alt="view of NYC"
+                        sizes="(max-width: 1080px) 100vw, 1080px">
+                  
+                    <!-- https://www.pexels.com/photo/eiffel-tower-behind-buildings-1850619/ -->
+                    <!-- https://www.pexels.com/photo/people-walking-on-the-street-2506923/ -->
+                    <!-- https://www.pexels.com/photo/empire-state-building-new-york-466685/ -->
+            </article>
+        </section>
+
+        <section class="main-content anim-txt-2">
+            <h2><div class="flip-txt">How to Use </div><div class="">Animations</div></h2>
+            <table class="anim-table">
+                <div>
+                    <tr class="table-head">
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>animation-name</td>
+                        <td>indicates the name of the animation that is set by coder</td>
+                    </tr>
+                    <tr>
+                        <td>animation-duration</td>
+                        <td>Inidicates how long the animation should take to complete</td>
+                    </tr>
+                    <tr>
+                        <td>animation-delay</td>
+                        <td>Indicates how long of a delay before the animation starts.</td>
+                    </tr>
+                    <tr>
+                        <td>animation-iteration-count</td>
+                        <td>Inidcates how many times an animation runs</td>
+                    </tr>
+                    <tr>
+                        <td>animation-direction</td>
+                        <td>Indicates direction the animation runs in <br> Values include: normal, reverse, alternate, alternate-reverse</td>
+                    </tr>
+                    <tr>
+                        <td>animation-timing-function</td>
+                        <td>Indicates how fast the animation speed will fluctuate <br> Values include: ease, linear, ease-in, ease-out, ease-in-out</td>
+                    </tr>
+                    <tr>
+                        <td>animation-fill-mode</td>
+                        <td>Indicates whether the animation retains styles after its execution <br> Values include: none, forwards, backwards, both</td>
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>
+                        <td>Controls various points of an animation like a flipnote animation, with the start at 0% and ending with 100%</td>
+                    </tr>
+                    <tr>
+                        <td>@webkit</td>
+                        <td>Used on webkit browsers like Safari and Chrome, allowing for non-standard CSS styles. list of extensions found  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions" target="_blank">here</a></td>
+                    </tr>
+                </div>
+            </table>
+        </section>
+
+        <section class="main-content anim-txt-3">
+            <h2 data-text="Explore">Explore Animations</h2>
+                <article class="anim-grid">
+                    <div class="grid-anim-1">
+                        <h3 class="gradient-txt">Animations</h3>
+                    </div>
+
+                    <div class="grid-anim-2"> 
+                        <div class="gold-box"> </div>
+                    </div>
+
+                    <div class="grid-anim-3"> 
+                        <h3>Animations</h3>
+                    </div>
+
+                    <div class="grid-anim-4"> 
+                        <span>A</span> <span>N</span> <span>I</span> <span>M</span> <span>A</span> <span>T</span> <span>I</span> <span>O</span> <span>N</span> <span>S</span>
+                    </div>
+                </article>
+        </section>
     </main>
     <footer>
-
+        <p>@Ryan Leung</p>
     </footer>
 </body>
 </html>
